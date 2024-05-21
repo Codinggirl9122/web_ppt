@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  background: #191919;
+  font-family: sans-serif;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.background {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.header,
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 10px 0 30px 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-top: 50px;
+  color: #d3d3d3;
+}
+
+.second-page h1 {
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
+
+.second-page p {
+  font-size: 1.2rem;
+  margin: 10px 0 30px 0;
+  color: #d3d3d3;
+  line-height: 1.6;
+}
+
+.third-page {
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.third-page h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 0;
+  color: #d3d3d3;
+  font-size: 2rem;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+}
+
+.grid-item h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+}
+
+.fourth-page .background,
+.fifth-page .background,
+.six-page .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fourth-page .background img,
+.fifth-page .background img,
+.six-page .background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.fourth-page,
+.fifth-page,
+.six-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+}
+
+.about-img-container {
+  margin-right: 20px;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.short-content,
+.long-content {
+  background-color: transparent;
+  padding: 20px;
+  margin: 20px;
+  max-width: 600px;
+}
+
+.short-content h2,
+.long-content h2 {
+  margin-bottom: 10px;
+}
+
+.short-content p,
+.long-content p {
+  font-size: 1.2rem;
+}
+
+/* Styles for the six-page */
+.six-page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.text-section {
+  width: 50%;
+
+  padding-right: 20px;
+}
+
+.text-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  align-items: end;
+}
+
+.image-section {
+  width: 50%;
+  text-align: right;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.pre {
+  font-style: italic;
+  text-align: -50%;
+}
